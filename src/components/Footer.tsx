@@ -20,7 +20,7 @@ const Footer = () => {
                             </span>
                         </Link>
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} SyncrFit - All rights reserved
+                            © {new Date().getFullYear()} SyncrFit - made by Srijita
                         </p>
                     </div>
 

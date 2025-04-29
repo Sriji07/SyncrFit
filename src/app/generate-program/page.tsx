@@ -202,7 +202,7 @@ const GenerateProgramPage = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl font-bold text-foreground">CodeFlex AI</h2>
+              <h2 className="text-xl font-bold text-foreground">SyncrFit AI</h2>
               <p className="text-sm text-muted-foreground mt-1">Fitness & Diet Coach</p>
 
               {/* SPEAKING INDICATOR */}
@@ -266,7 +266,7 @@ const GenerateProgramPage = () => {
               {messages.map((msg, index) => (
                 <div key={index} className="message-item animate-fadeIn">
                   <div className="font-semibold text-xs text-muted-foreground mb-1">
-                    {msg.role === "assistant" ? "CodeFlex AI" : "You"}:
+                    {msg.role === "assistant" ? "SyncrFit AI" : "You"}:
                   </div>
                   <p className="text-foreground">{msg.content}</p>
                 </div>
@@ -288,10 +288,10 @@ const GenerateProgramPage = () => {
         <div className="w-full flex justify-center gap-4">
           <Button
             className={`w-40 text-xl rounded-3xl ${callActive
-                ? "bg-destructive hover:bg-destructive/90"
-                : callEnded
-                  ? "bg-green-600 hover:bg-green-700"
-                  : "bg-primary hover:bg-primary/90"
+              ? "bg-destructive hover:bg-destructive/90"
+              : callEnded
+                ? "bg-green-600 hover:bg-green-700"
+                : "bg-primary hover:bg-primary/90"
               } text-white relative`}
             onClick={toggleCall}
             disabled={connecting || callEnded}
